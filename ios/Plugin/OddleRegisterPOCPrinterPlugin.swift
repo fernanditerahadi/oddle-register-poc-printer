@@ -15,4 +15,16 @@ public class OddleRegisterPOCPrinterPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func print(_ call: CAPPluginCall) {
+        call.reject("Not implemented in iOS")
+    }
+    
+    @objc func connectPrinter(_ call: CAPPluginCall) {
+        call.reject("Not implemented in iOS")
+    }
+    
+    @objc func disconnectPrinter(_ call: CAPPluginCall) {
+        call.reject("Not implemented in iOS")
+    }
 }
